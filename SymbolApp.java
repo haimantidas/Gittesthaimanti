@@ -41,7 +41,10 @@ public class SymbolApp extends Frame implements ActionListener {
 
         // Panel for submit button
         Panel controlPanel = new Panel(new FlowLayout());
-        submitButton = new Button("Submit");
+        submitButton = new Button("Chin tapak Dum Dum");
+        submitButton.addActionListener(this);
+        submitButton.setFont(new Font("Arial", Font.BOLD, 18));
+        submitButton.setPreferredSize(new Dimension(250, 50)); // Styling the button
         submitButton.addActionListener(this);
         controlPanel.add(submitButton);
         add(controlPanel, BorderLayout.SOUTH);
